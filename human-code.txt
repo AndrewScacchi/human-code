@@ -1,0 +1,53 @@
+"A casa"
+-Prendere blocco appunti
+-Prendere una penna
+-Annotare alimenti mancanti
+-Ricordare di annotare crocchette per Ricky
+
+"Tragitto"
+-Uscire di casa
+-Dirigersi verso il supermercato
+
+"Al Supermercato"
+-Prendere il carrello
+-Entrare al supermercato
+-Dirigersi verso i reparti
+SE:{
+
+PER OGNI REPARTO:{
+	-Leggere intestazione reparto
+	-Confrontare con Alimenti nella lista
+
+	SE (UNO O PIU' ALIMENTI) SONO PRESENTI NEL REPARTO:{
+		-Entrare nel reparto:
+		PER OGNI ELEMENTO DELLA LISTA APPARTENENTE AL REPARTO:{
+			-Cercare l'alimento nel reparto (SE ELEMENTO NON PRESENTE:
+						-Passare ad alimento successivo)
+			-Prenderlo e metterlo nel carrello
+			-Rimuoverlo dalla lista
+			} Passare a reparto successivo			
+	ALTRIMENTI:{
+		-Passare a reparto successivo}
+
+}...
+}
+ALTRIMENTI:{
+	-Andare in cassa}
+
+"IN CASSA"
+-Mettere alimenti sul rullo
+-Utilizzare buono sconto in scadenza
+-Pagare
+SE CONTANTI SUPERIORI A COSTO DELLA SPESA:{
+	-Pagare in contenti}
+ALTRIMENTI:{
+	-Pagare con la carta di credito}
+-Imbustare spesa
+-Uscire dal supermercato
+-Dirigersi a casa
+
+
+
+
+
+	
